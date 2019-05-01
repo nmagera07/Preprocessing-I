@@ -143,19 +143,20 @@ body {
   margin: 0 auto;
 }
 header {
-  height: 10%;
+  height: 8%;
   border: 1px solid gray;
-  background-color: gray;
+  background-color: #1063a7;
 }
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
-  margin-top: 2%;
+  margin-top: 1.7%;
 }
 a {
   text-decoration: none;
+  color: white;
 }
 .main-intro {
   display: flex;
@@ -165,22 +166,44 @@ a {
   border: 1px solid black;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 5%;
   text-align: center;
+  font-family: 'Merriweather';
 }
 p {
   font-size: 1.1rem;
   margin-top: 2%;
   text-align: center;
+  font-family: 'Ubuntu';
 }
 li {
   text-align: center;
-  line-height: 3rem;
-  margin-top: 1%;
+  line-height: 1.5em;
+  margin-top: 3%;
+  font-family: 'Ubuntu';
 }
 img {
   height: 400px;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 3%;
+}
+.li-1 {
+  color: orange;
+}
+.li-2 {
+  color: brown;
+}
+.li-3 {
+  color: blue;
+}
+.li-4 {
+  color: green;
+}
+.project-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2 {
+  width: 40%;
 }
