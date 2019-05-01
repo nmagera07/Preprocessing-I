@@ -206,4 +206,27 @@ img {
 }
 .section2 {
   width: 40%;
+  margin-top: 5%;
+}
+h2 {
+  text-align: center;
+  font-family: 'Merriweather';
+}
+p {
+  font-family: 'Ubuntu';
+}
+.project-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section3 {
+  width: 40%;
+  margin-top: 5%;
+}
+h2 {
+  text-align: center;
+  font-family: 'Merriweather';
+}
+p {
+  font-family: 'Ubuntu';
 }
