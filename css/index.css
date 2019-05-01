@@ -211,13 +211,16 @@ img {
 h2 {
   text-align: center;
   font-family: 'Merriweather';
+  font-size: 1.75rem;
 }
 p {
   font-family: 'Ubuntu';
+  line-height: 2rem;
 }
 .project-content {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 8%;
 }
 .section3 {
   width: 40%;
@@ -226,7 +229,13 @@ p {
 h2 {
   text-align: center;
   font-family: 'Merriweather';
+  font-size: 1.75rem;
 }
 p {
   font-family: 'Ubuntu';
+  line-height: 2rem;
+}
+form {
+  text-align: center;
+  margin-top: 2%;
 }
