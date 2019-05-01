@@ -137,6 +137,9 @@ body {
 .main-display {
   display: flex;
 }
+.main-layout {
+  flex-direction: column;
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -147,14 +150,14 @@ header {
   border: 1px solid gray;
   background-color: #1063a7;
 }
-.navigation {
+header .navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 1.7%;
 }
-a {
+header .navigation a {
   text-decoration: none;
   color: white;
 }
@@ -163,64 +166,62 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 5%;
-  border: 1px solid black;
 }
-h1 {
+.main-intro h1 {
   font-size: 3rem;
   margin-top: 5%;
   text-align: center;
   font-family: 'Merriweather';
 }
-p {
+.main-intro p {
   font-size: 1.1rem;
   margin-top: 2%;
   text-align: center;
   font-family: 'Ubuntu';
 }
-li {
+.main-intro li {
   text-align: center;
   line-height: 1.5em;
   margin-top: 3%;
   font-family: 'Ubuntu';
 }
-img {
+.main-intro img {
   height: 400px;
   width: 100%;
   margin-top: 3%;
 }
-.li-1 {
+.main-intro .li-1 {
   color: orange;
 }
-.li-2 {
+.main-intro .li-2 {
   color: brown;
 }
-.li-3 {
+.main-intro .li-3 {
   color: blue;
 }
-.li-4 {
+.main-intro .li-4 {
   color: green;
 }
 .project-content {
   display: flex;
   justify-content: space-evenly;
 }
-.section2 {
+.project-content .section2 {
   width: 40%;
   margin-top: 5%;
 }
-h2 {
+.project-content h2 {
   text-align: center;
   font-family: 'Merriweather';
   font-size: 1.75rem;
 }
-p {
+.project-content p {
   font-family: 'Ubuntu';
   line-height: 2rem;
 }
 .project-content {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 8%;
 }
 .section3 {
   width: 40%;
@@ -235,7 +236,21 @@ p {
   font-family: 'Ubuntu';
   line-height: 2rem;
 }
+.contact-me {
+  margin-top: 5%;
+}
 form {
   text-align: center;
-  margin-top: 2%;
+  margin-top: 3%;
+}
+label {
+  margin-right: 0.25%;
+}
+footer {
+  height: 4.5%;
+  background-color: #1063a7;
+  margin-top: 5%;
+}
+p {
+  text-align: center;
 }

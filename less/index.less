@@ -66,6 +66,10 @@ html, body {
 	display: flex;
 }
 
+.main-layout {
+	flex-direction: column;
+}
+
 
 .container {
 	max-width: 1200px;
@@ -77,28 +81,24 @@ html, body {
 		height: 8%;
 		border: 1px solid gray;
 		background-color: rgb(16, 99, 167);
-	}
 		.navigation {
 			.main-display();
 			flex-direction: row;
 			justify-content: center;
 			justify-content: space-evenly;
 			margin-top: 1.7%;
-			
-		}
 			a {
 				text-decoration: none;
 				color: white;
 			}
-
+		}
+	}
+			
 	.main-intro {
 		.main-display();
-		flex-direction: column;
+		.main-layout();
 		justify-content: space-evenly;
 		margin-top: 5%;
-		border: 1px solid black;
-		
-	}
 		h1 {
 			font-size: 3rem;
 			margin-top: 5%;
@@ -141,12 +141,12 @@ html, body {
 		.li-4 {
 			color: green;
 		}
-
+	}
+		
 	.project-content {
 		.main-display();
 		justify-content: space-evenly;
-	}
-		.section2 {
+			.section2 {
 			width: 40%;
 			margin-top: 5%;
 		}
@@ -160,11 +160,12 @@ html, body {
 				font-family: @p-font-headings;
 				line-height: 2rem;
 			}
-
+	}
+	
 	.project-content {
 		.main-display();
 		justify-content: space-evenly;
-		margin-bottom: 8%;
+		
 	}
 		.section3 {
 			width: 40%;
@@ -181,13 +182,25 @@ html, body {
 				line-height: 2rem;
 			}
 
-	.contact {
-		
+	.contact-me {
+		margin-top: 5%;
 	}
 		form {
 		text-align: center;
-		margin-top: 2%;
+		margin-top: 3%;
 	}
+			label {
+				margin-right: 0.25%;
+			}
+
+	footer {
+		height: 4.5%;
+		background-color: rgb(16, 99, 167);
+		margin-top: 5%;
+	}
+		p {
+			text-align: center;
+		}
 	
 	
 	
