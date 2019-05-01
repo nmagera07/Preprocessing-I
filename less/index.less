@@ -87,6 +87,9 @@ html, body {
 			justify-content: center;
 			justify-content: space-evenly;
 			margin-top: 1.7%;
+			@media (max-width: 500px) {
+				margin-top: 8%;
+			}
 			a {
 				text-decoration: none;
 				color: white;
@@ -111,6 +114,11 @@ html, body {
 			margin-top: 2%;
 			text-align: center;
 			font-family: @p-font-headings;
+			@media (max-width: 500px) {
+				width: 49%;
+				margin-left: 25%;
+
+			}
 		}
 
 		li {
@@ -146,9 +154,17 @@ html, body {
 	.project-content {
 		.main-display();
 		justify-content: space-evenly;
+		@media (max-width: 500px) {
+			.main-layout();
+			background-color: rgba(233, 233, 248, 0.575);
+			margin-top: 5%;
+		}
 			.section2 {
 			width: 40%;
 			margin-top: 5%;
+			@media (max-width: 500px) {
+				margin-left: 30%;
+			}
 		}
 			h2 {
 				text-align: center;
@@ -170,6 +186,9 @@ html, body {
 		.section3 {
 			width: 40%;
 			margin-top: 5%;
+			@media (max-width: 500px) {
+				margin-left: 30%;
+			}
 		}
 			h2 {
 				text-align: center;
