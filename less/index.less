@@ -54,6 +54,172 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+// Variables
+@title-font-headings: 'Merriweather';
+@p-font-headings: 'Ubuntu';
+
+// Mixins
+.main-display {
+	display: flex;
+}
+
+.main-layout {
+	flex-direction: column;
+}
+
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+	header {
+		height: 8%;
+		border: 1px solid gray;
+		background-color: rgb(16, 99, 167);
+		.navigation {
+			.main-display();
+			flex-direction: row;
+			justify-content: center;
+			justify-content: space-evenly;
+			margin-top: 1.7%;
+			@media (max-width: 500px) {
+				margin-top: 8%;
+			}
+			a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+			
+	.main-intro {
+		.main-display();
+		.main-layout();
+		justify-content: space-evenly;
+		margin-top: 5%;
+		h1 {
+			font-size: 3rem;
+			margin-top: 5%;
+			text-align: center;
+			font-family: @title-font-headings;
+		}
+
+		p {
+			font-size: 1.1rem;
+			margin-top: 2%;
+			text-align: center;
+			font-family: @p-font-headings;
+			@media (max-width: 500px) {
+				width: 49%;
+				margin-left: 25%;
+
+			}
+		}
+
+		li {
+			text-align: center;
+			line-height: 1.5em;
+			margin-top: 3%;
+			font-family: @p-font-headings;
+		}
+
+		img {
+			height: 400px;
+			width: 100%;
+			margin-top: 3%;
+		}
+
+		.li-1 {
+			color: orange;
+		}
+
+		.li-2 {
+			color: brown;
+		}
+
+		.li-3 {
+			color: blue;
+		}
+
+		.li-4 {
+			color: green;
+		}
+	}
+		
+	.project-content {
+		.main-display();
+		justify-content: space-evenly;
+		@media (max-width: 500px) {
+			.main-layout();
+			background-color: rgba(233, 233, 248, 0.575);
+			margin-top: 5%;
+		}
+			.section2 {
+			width: 40%;
+			margin-top: 5%;
+			@media (max-width: 500px) {
+				margin-left: 30%;
+			}
+		}
+			h2 {
+				text-align: center;
+				font-family: @title-font-headings;
+				font-size: 1.75rem;
+			}
+
+			p {
+				font-family: @p-font-headings;
+				line-height: 2rem;
+			}
+	}
+	
+	.project-content {
+		.main-display();
+		justify-content: space-evenly;
+		
+	}
+		.section3 {
+			width: 40%;
+			margin-top: 5%;
+			@media (max-width: 500px) {
+				margin-left: 30%;
+			}
+		}
+			h2 {
+				text-align: center;
+				font-family: @title-font-headings;
+				font-size: 1.75rem;
+			}
+
+			p {
+				font-family: @p-font-headings;
+				line-height: 2rem;
+			}
+
+	.contact-me {
+		margin-top: 5%;
+	}
+		form {
+		text-align: center;
+		margin-top: 3%;
+	}
+			label {
+				margin-right: 0.25%;
+			}
+
+	footer {
+		height: 4.5%;
+		background-color: rgb(16, 99, 167);
+		margin-top: 5%;
+	}
+		p {
+			text-align: center;
+		}
+	
+	
+	

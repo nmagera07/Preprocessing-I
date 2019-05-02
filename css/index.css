@@ -1,1 +1,284 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.main-display {
+  display: flex;
+}
+.main-layout {
+  flex-direction: column;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  height: 8%;
+  border: 1px solid gray;
+  background-color: #1063a7;
+}
+header .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 1.7%;
+}
+@media (max-width: 500px) {
+  header .navigation {
+    margin-top: 8%;
+  }
+}
+header .navigation a {
+  text-decoration: none;
+  color: white;
+}
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.main-intro h1 {
+  font-size: 3rem;
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'Merriweather';
+}
+.main-intro p {
+  font-size: 1.1rem;
+  margin-top: 2%;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+@media (max-width: 500px) {
+  .main-intro p {
+    width: 49%;
+    margin-left: 25%;
+  }
+}
+.main-intro li {
+  text-align: center;
+  line-height: 1.5em;
+  margin-top: 3%;
+  font-family: 'Ubuntu';
+}
+.main-intro img {
+  height: 400px;
+  width: 100%;
+  margin-top: 3%;
+}
+.main-intro .li-1 {
+  color: orange;
+}
+.main-intro .li-2 {
+  color: brown;
+}
+.main-intro .li-3 {
+  color: blue;
+}
+.main-intro .li-4 {
+  color: green;
+}
+.project-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .project-content {
+    flex-direction: column;
+    background-color: rgba(233, 233, 248, 0.575);
+    margin-top: 5%;
+  }
+}
+.project-content .section2 {
+  width: 40%;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .project-content .section2 {
+    margin-left: 30%;
+  }
+}
+.project-content h2 {
+  text-align: center;
+  font-family: 'Merriweather';
+  font-size: 1.75rem;
+}
+.project-content p {
+  font-family: 'Ubuntu';
+  line-height: 2rem;
+}
+.project-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section3 {
+  width: 40%;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .section3 {
+    margin-left: 30%;
+  }
+}
+h2 {
+  text-align: center;
+  font-family: 'Merriweather';
+  font-size: 1.75rem;
+}
+p {
+  font-family: 'Ubuntu';
+  line-height: 2rem;
+}
+.contact-me {
+  margin-top: 5%;
+}
+form {
+  text-align: center;
+  margin-top: 3%;
+}
+label {
+  margin-right: 0.25%;
+}
+footer {
+  height: 4.5%;
+  background-color: #1063a7;
+  margin-top: 5%;
+}
+p {
+  text-align: center;
+}
